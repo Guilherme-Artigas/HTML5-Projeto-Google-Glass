@@ -40,7 +40,7 @@
                         </hgroup>
                     </header>
 
-                    <form action="">
+                    <form action="" method="POST" id="fContato">
                         <fieldset id="usuario">
                             <legend>Identificação do Usuário</legend>
                             <p><label for="cNome">Nome:</label><input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome Completo"></p>
@@ -56,24 +56,29 @@
             
                         <fieldset id="endereco">
                             <legend>Endereço do Usuário</legend>
-                            <p><label>Logradouro:</label><input type="text" name="tRua" id="cRua" size="80" maxlength="80" placeholder="Rua, Bairro"></p>
-                            <p><label>Número:</label><input type="number" name="tNum" id="cNum" min="0" max="9999" placeholder="Nº"></p>
-                            <p><label>Estado:</label><input type=""></p>
-                            <p><label>Cidade:</label><input type=""></p>
+                            <p><label for="cRua">Logradouro:</label><input type="text" name="tRua" id="cRua" size="80" maxlength="80" placeholder="Rua, Bairro"></p>
+                            <p><label for="cNum">Número:</label><input type="number" name="tNum" id="cNum" min="0" max="9999" placeholder="Nº"></p>
+                            <p><label for="cEst">Estado:</label>
+                                <select name="tEst" id="cEst">
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="SP">São Paulo</option>
+                                </select></p>
+                            <p><label for="cCid">Cidade:</label><input type="text" name="tCid" id="cCid" maxlength="40" size="20" placeholder="Sua cidade"></p>
                         </fieldset>
             
                         <fieldset id="mensagem">
                             <legend>Mensagem do Usuário</legend>
-                            Grau de Urgência:
-                            Mensagem:
+                            <p><label for="cUrg">Grau de Urgência: Min </label><input type="range" name="tUrg" id="cUrg" min="0" max="2"> Máx</p>
+                            <p><label for="cMsg">Mensagem:</label>
+                                <textarea name="tMsg" id="cMsg" cols="60" rows="10" placeholder="Escreva aqui a sua Mensagem..."></textarea></p>
                         </fieldset>
             
                         <fieldset id="pedido">
                             <legend>Quero um Google Glass</legend>
-                            Gostaria de adquirir um Google Glass quando disponível
-                            Cor:
-                            Quantidade:
-                            Preço Total: R$
+                            <p><label for="CPed">Gostaria de adquirir um Google Glass quando disponível</label><input type=""></p>
+                            <p><label for="cCor">Cor:</label><input type=""></p>
+                            <p><label for="CQtd">Quantidade:</label><input type=""></p>
+                            <p><label for="cTot">Preço Total: R$</label><input type=""></p>
                         </fieldset>
 
                         [BOTÃO ENVIAR]

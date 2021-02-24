@@ -43,12 +43,14 @@ table#tabela-spec td.ce {color: white; background-color: #606060; vertical-align
 table#tabela-spec td.cd {background-color: #cecece; }
 table#tabela-spec caption {color: #888888; font-size: 13pt; font-weight: bolder; }
 table#tabela-spec caption span {display: block; float: right; color: black; font-size: 8pt; margin-top: 10px; }
+section#corpo video {margin: 10px 10px 10px 140px; }
 
 /* aside */
 
 aside#lateral {background-color: #dddddd; display: block; width: 400px; float: right; padding: 10px; margin-top: 10px; border-radius: 5px; box-shadow: 2px 2px 2px rgba(0, 0, 0, .5)}
 aside#lateral h1 {font-family: 'FonteLogo'; font-size: 20pt; color: #606060; margin-top: 0px; }
 aside#lateral h2 {background-color: #606060; font-size: 13pt; color: #ffffff; padding: 5px; border-radius: 5px; }
+aside#lateral video {width: 400px; }
 
 /* footer */
 
